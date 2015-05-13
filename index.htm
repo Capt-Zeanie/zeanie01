@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+	<head>
+		<title><?php echo $this->title(); ?></title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow" />
+		<meta name="description" content="<?php echo ($this->description() != '') ? $this->description() : 'Default description goes here'; ?>" />
+		<meta name="keywords" content="<?php echo ($this->keywords() != '') ? $this->keywords() : 'default, keywords, here'; ?>" />
+		<meta name="author" content="Author Name" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="<?php echo THEMES_URI; ?>zeanie01/css/screen.css" rel="stylesheet" media="screen">
+		<link rel="shortcut icon" href="<?php echo THEMES_URI; ?>zeanie01/images/favicon.ico" type="image/x-icon" />
+		<link rel="favourites icon" href="<?php echo THEMES_URI; ?>zeanie01/images/favicon.ico" />
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<!-- Header start -->
+				<h1><span>Arrowsmith Central</span></h1>
+				<h2><span>No hacks just cracks</span></h2>
+				<div id="cssmenu">
+					<ul>
+						<?php echo url_match('/') ? '<li class="current">': '<li>'; ?><a href="<?php echo URL_PUBLIC; ?>">Home</a></li>
+						<?php foreach($this->find('/')->children() as $menu): ?>
+						<?php echo in_array($menu->slug, explode('/', $this->url(false))) ? '<li class="current">': '<li>'; ?><?php echo $menu->link($menu->title); ?></li>
+						<?php endforeach; ?> 
+					<li class='last'><a href='#'><span>Contact</span></a></li>
+					</ul>
+				</div>
+			<!-- Header end -->
+		</div>
+		<div class="colmask holygrail">
+			<div class="colmid">
+				<div class="colleft">
+					<div class="col1wrap">
+						<div class="col1">
+							<!-- Column 1 start -->
+								<h2>Main Content Header</h2>
+								<br />
+								<p>Content</p>
+							<!-- Column 1 end -->
+						</div>
+					</div>
+					<div class="col2">
+						<!-- Column 2 start -->
+							<h2>Navbar Header</h2>
+							<p>Navbar Content</p>
+							<div class="featurebox featurebox-default">
+								<div class="featurebox-heading">
+									<h3 class="featurebox-title">Navbar Header</h3>
+								</div>
+								<div class="featurebox-body">
+								<?php $this->includeSnippet('zeanie01sidenav'); ?>
+								</div>
+							</div>
+						<!-- Column 2 end -->
+					</div>
+					<div class="col3">
+						<!-- Column 3 start -->
+							<h2>Sidebar Header</h2>
+							<p>Sidebar Content</p>
+							<br />
+							<div class="featurebox featurebox-default">
+								<div class="featurebox-heading">
+									<h3 class="featurebox-title">Feature Header</h3>
+								</div>
+								<div class="featurebox-body">Feature Text
+								</div>
+							</div>
+							<div class="featurebox featurebox-default">
+								<div class="featurebox-heading">
+									<h3 class="featurebox-title">Feature Header</h3>
+								</div>
+								<div class="featurebox-body">Feature Text
+								</div>
+							</div>
+						<!-- Column 3 end -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<!-- Footer start -->
+				<p>&copy; Copyright <?php echo date('Y'); ?> <a href="http://www.wolfcms.org/" title="Wolf">Me</a><br />
+				<a href="http://www.wolfcms.org/" title="Wolf CMS">Wolf CMS</a> Inside.</p>
+			<!-- Footer end -->
+		</div>
+	</body>
+</html>
