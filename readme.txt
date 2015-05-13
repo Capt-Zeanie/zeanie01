@@ -30,6 +30,20 @@ Tweaking
 
 The CSS file is in /zeanie01/css/screen.css.
 
+I have put a couple of boxes that got in the left and right side columns in the layout. You can remove them or add more. 
+	<div class="featurebox featurebox-default">
+		<div class="featurebox-heading">
+			<h3 class="featurebox-title-general">Feature Header</h3>
+		</div>
+		<div class="featurebox-body-general">Feature Text
+		</div>
+	</div>
+
+Footer is empty and I have put the copyright messages into a feature box in the left column.
+	
+To Do.
+Sticky Footer. I have tried a few ways but nothing has worked so far.
+	
 Changelog
 
-20150513 - first public release
+20150513 - First Public Release
