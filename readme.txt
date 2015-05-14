@@ -16,7 +16,7 @@ Main menu in the header.
 Submenu rolling navigation in sidebar that will always points up to the parent page (if there is one) and down to any child pages (if there are any).
 
 Installing
-
+    Download the file from https://github.com/Capt-Zeanie/zeanie01/archive/master.zip and unzip the folder and then rename the folder from zeanie01-master to zeanie01
     In your Wolf admin, go to Files > themes and upload the /zeanie01 folder (or use FTP to upload the /zeanie01 folder to your Wolf installation's /public/themes directory).
     Go the Snippets tab, and create new snippet called zeanie01sidenav. Copy/paste the contents of the zeanie01sidenav.php file into the body of this snippet; make sure filter is set to --none--. Save.
     Go to the Layouts tab, and create a new layout called zeanie01, with the Content-Type of text/html. Copy/paste the contents of the zeanie01layout.html file into the body of this layout. Save.
