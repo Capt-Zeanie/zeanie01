@@ -1,19 +1,13 @@
 /**
  * Zeanie01 Theme for Wolf CMS 
  *
- * Simple 3 column layout based on... 
- * The 'Holy Grail' 3 column Liquid Layout (Pixel-widths) by Matthew James Taylor.
- * No CSS hacks. SEO friendly 2-1-3 column order. Cross-browser. Equal height columns
- * http://matthewjamestaylor.com/blog/ultimate-3-column-holy-grail-pixels.htm
+ * Simple 3 column layout with Header and Footer
  * @author Sean Arrowsmith
  * @package Wolf
  * @subpackage theme.zeanie01
  * @version 0.0.1
  */
 
-A minimally tweaked version of the 'Holy Grail' 3 column Liquid Layout.
-Main menu in the header.
-Submenu rolling navigation in sidebar that will always points up to the parent page (if there is one) and down to any child pages (if there are any).
 
 Installing
     Download the file from https://github.com/Capt-Zeanie/zeanie01/archive/master.zip and unzip the folder and then rename the folder from zeanie01-master to zeanie01
@@ -39,11 +33,9 @@ I have put a couple of boxes that got in the left and right side columns in the 
 		</div>
 	</div>
 
-Footer is empty and I have put the copyright messages into a feature box in the left column.
-	
-To Do.
-Sticky Footer. I have tried a few ways but nothing has worked so far.
-	
 Changelog
+2015-05-15
+- Changed CSS layout
 
-20150513 - First Public Release
+2015-05-13
+- First Public Release
