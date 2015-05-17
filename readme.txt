@@ -2,6 +2,7 @@
  * Zeanie01 Theme for Wolf CMS 
  *
  * Simple 3 column layout with Header and Footer
+ * CSS Layout based on http://d.alistapart.com/holygrail/example_3.html
  * @author Sean Arrowsmith
  * @package Wolf
  * @subpackage theme.zeanie01
